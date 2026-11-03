@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#282520">
+    <meta name="description" content="PixDung — sign in to your account or get the game.">
+    <title>PixDung</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="PixDung home"><span class="brand-icon" aria-hidden="true">P</span>PixDung</a>
+      <button class="sign-in-trigger" id="open-sign-in" type="button">Sign in <span aria-hidden="true">↗</span></button>
+    </header>
+
+    <main id="home">
+      <section class="storefront" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow"><span class="green-dot"></span> ADVENTURE AWAITS</p>
+          <div class="screenshot-strip" aria-label="Screenshots from PixDung">
+            <img src="pic/screenshots/Screenshot%202026-10-06%20170642.png" alt="PixDung voxel landscape with a mountain and green plains" loading="lazy" decoding="async">
+            <img src="pic/screenshots/Screenshot%202026-10-06%20170700.png" alt="PixDung voxel island surrounded by lava" loading="lazy" decoding="async">
+          </div>
+          <h1 id="page-title">Welcome to<br><span>PixDung.</span></h1>
+          <p class="intro-copy">A world of blocks, builds, and discoveries is waiting.</p>
+        </div>
+
+        <section class="checkout-card" aria-labelledby="checkout-title">
+          <div class="card-topline">
+            <p class="eyebrow">PIXDUNG / GAME</p>
+            <span class="edition-tag">FULL GAME</span>
+          </div>
+          <h2 id="checkout-title">Get PixDung</h2>
+          <p class="checkout-copy">Get the game and start building your own adventure.</p>
+          <div class="price-row"><span>PixDung</span><span class="price">Checkout setup pending</span></div>
+          <button class="checkout-button" id="checkout-button" type="button" disabled>Checkout unavailable <span aria-hidden="true">↗</span></button>
+          <p class="notice" id="checkout-status" role="status">Secure checkout will be available once the payment provider is connected.</p>
+        </section>
+      </section>
+
+      <section class="community" id="community" aria-labelledby="community-title">
+        <div class="community-heading">
+          <p class="eyebrow"><span class="green-dot"></span> THE PIXDUNG COMMUNITY</p>
+          <h2 id="community-title">Community topics</h2>
+          <p class="community-copy">Find your people, trade ideas, and share what you’re making.</p>
+        </div>
+        <div class="topic-grid">
+          <article class="topic-card">
+            <span class="topic-icon" aria-hidden="true">▦</span>
+            <p class="topic-label">SHOW & TELL</p>
+            <h3>Builds & creations</h3>
+            <p>Show off your builds, worlds, and clever creations.</p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-icon" aria-hidden="true">?</span>
+            <p class="topic-label">LEND A HAND</p>
+            <h3>Help & tips</h3>
+            <p>Ask questions, swap tips, and help other players out.</p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-icon" aria-hidden="true">✦</span>
+            <p class="topic-label">SHAPE THE GAME</p>
+            <h3>Ideas & feedback</h3>
+            <p>Share suggestions and let the team know what you think.</p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-icon" aria-hidden="true">◎</span>
+            <p class="topic-label">PULL UP A BLOCK</p>
+            <h3>General chat</h3>
+            <p>Meet fellow players and talk about all things PixDung.</p>
+          </article>
+        </div>
+        <p class="community-notice">Forum discussions and posting will appear here once the PixDung community service is connected.</p>
+      </section>
+    </main>
+
+    <dialog class="sign-in-dialog" id="sign-in-dialog" aria-labelledby="sign-in-title">
+      <button class="dialog-close" id="close-sign-in" type="button" aria-label="Close sign in">×</button>
+      <p class="eyebrow">PIXDUNG ACCOUNT</p>
+      <h2 id="sign-in-title">Sign in</h2>
+      <p class="dialog-copy">Sign-in is being set up. Your account service will be connected here.</p>
+      <form id="sign-in-form">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="username" placeholder="you@example.com" disabled>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password" disabled>
+        <button class="checkout-button" id="sign-in-button" type="submit" disabled>Sign-in unavailable</button>
+        <p class="notice" id="sign-in-status" role="status">Account sign-in is not connected yet.</p>
+      </form>
+    </dialog>
+    <div class="texture-credit" aria-hidden="true">PIXEL BY PIXEL</div>
+  </body>
+</html>
